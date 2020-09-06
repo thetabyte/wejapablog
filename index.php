@@ -1,7 +1,7 @@
 <?php
   require "config/db.php";
 
-  $query = "SELECT * FROM posts ORDER BY created_at DESC";
+  $query = "SELECT * FROM posts";
 
   $result = mysqli_query($conn,$query);
 
