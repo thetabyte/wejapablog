@@ -29,7 +29,7 @@
   <?php foreach($posts as $post): ?>
   <div class="container">
     <h3><?php echo $post["title"] ?></h3>
-    <small><?php echo $post["body"] ?></small>
+    <small><?php echo substr($post["body"],0,25) ?></small>
     <p>Created by <?php echo $post["author"]?> <?php echo $post["created_at"]  ?></p>
     <a href="<?php echo ROOT_URL ?>post.php?id=<?php echo $post['id']; ?>">Read More</a>
   </div>
